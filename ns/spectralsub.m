@@ -21,7 +21,7 @@ FLOOR=0.002;
 G=0.9;
 
 %%%% 预处理
-win=hanning(len); %对语音信号加汉明窗
+win=hamming(len); %对语音信号加汉明窗
 winGain = len2 / sum(win); % 
 
 nFFT=2 * 2^nextpow2(len);
